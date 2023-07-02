@@ -22,11 +22,11 @@ export default function HomePage() {
         }
         description="We write your biography. Let us bring your story to life. You’ve done the hard part - we make the rest easy."
       />
-      <Section title="Contact" supTitle="01" description="" />
-      <Section title="Match" supTitle="02" description="" />
-      <Section title="Write" supTitle="03" description="" />
-      <Section title="Review" supTitle="04" description="" />
-      <Section title="Publish" supTitle="05" description="" />
+      <Section title="Contact" supTitle="01" description="Initial consultations are always free." />
+      <Section title="Match" supTitle="02" description="Your biographer will meet with you to spend a week learning about you and your stories." />
+      <Section title="Write" supTitle="03" description="The biographer with write an initial draft." />
+      <Section title="Review" supTitle="04" description="You will receive a draft for review. We’ll apply any changes, and then send you a complete draft for sign off." />
+      <Section title="Publish" supTitle="05" description="Our publisher will print of your new biography and ship copies to you and your loved ones." />
       <Footer />
     </Container>
     <Action />

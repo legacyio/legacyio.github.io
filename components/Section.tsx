@@ -1,4 +1,4 @@
-import {Container, Grid, Text, Title, createStyles} from '@mantine/core';
+import {Container, Text, Title, createStyles} from '@mantine/core';
 
 interface Props {
   supTitle: React.ReactNode;
@@ -30,17 +30,8 @@ const useStyles = createStyles((theme) => ({
 
   description: {
     textAlign: 'center',
-    marginTop: theme.spacing.xs,
+    marginTop: theme.spacing.xl,
     fontSize: theme.fontSizes.lg,
-  },
-
-  highlight: {
-    backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-    padding: 5,
-    paddingTop: 0,
-    borderRadius: theme.radius.sm,
-    display: 'inline-block',
-    color: theme.colorScheme === 'dark' ? theme.white : 'inherit',
   },
 }));
 
@@ -52,14 +43,9 @@ export function Section(props: Omit<React.ComponentPropsWithoutRef<'div'>, 'titl
       <Title className={classes.title} order={2}>
         {props.title}
       </Title>
-      <Grid>
-        <Grid.Col span={4} />
-        <Grid.Col span={8}>
-          <Text color="dimmed" className={classes.description}>
-            {props.description}
-          </Text>
-        </Grid.Col>
-      </Grid>
+      <Text color="dimmed" className={classes.description}>
+        {props.description}
+      </Text>
     </Container>
   );
 }
