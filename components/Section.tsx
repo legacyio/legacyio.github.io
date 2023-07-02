@@ -43,7 +43,7 @@ export function Section(props: Omit<React.ComponentPropsWithoutRef<'div'>, 'titl
       <Title className={classes.title} order={2}>
         {props.title}
       </Title>
-      <Text color="dimmed" className={classes.description}>
+      <Text className={classes.description}>
         {props.description}
       </Text>
     </Container>

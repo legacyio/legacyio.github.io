@@ -40,7 +40,7 @@ export function Action() {
   return (
     <div className={classes.controls}>
       <Link
-        href="https://forms.gle/awvK3ycTYaEnKNTX6"
+        href="https://www.lifebeyonddeathplanning.com/"
         target="_blank"
         className={classes.control}
       >
