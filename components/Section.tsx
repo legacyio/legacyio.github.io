@@ -1,4 +1,4 @@
-import {Container, Text, Title, createStyles} from '@mantine/core';
+import { Container, Text, Title, createStyles } from '@mantine/core';
 
 interface Props {
   supTitle: React.ReactNode;
@@ -24,7 +24,9 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     lineHeight: 1,
+    textTransform: 'uppercase',
     textAlign: 'center',
+    letterSpacing: '0.1em',
     marginTop: theme.spacing.xl,
   },
 
@@ -43,9 +45,7 @@ export function Section(props: Omit<React.ComponentPropsWithoutRef<'div'>, 'titl
       <Title className={classes.title} order={2}>
         {props.title}
       </Title>
-      <Text className={classes.description}>
-        {props.description}
-      </Text>
+      <Text className={classes.description}>{props.description}</Text>
     </Container>
   );
 }

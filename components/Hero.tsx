@@ -1,4 +1,4 @@
-import {createStyles, Grid, Text, Title} from '@mantine/core';
+import { createStyles, Grid, Text, Title } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   content: {

@@ -39,11 +39,7 @@ export function Action() {
 
   return (
     <div className={classes.controls}>
-      <Link
-        href="https://www.lifebeyonddeathplanning.com/"
-        target="_blank"
-        className={classes.control}
-      >
+      <Link href="/reserve" className={classes.control}>
         <Button
           radius="xl"
           size="xl"
