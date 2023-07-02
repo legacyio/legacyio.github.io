@@ -1,7 +1,7 @@
-# paragon
+# legacy
 Landing page for:
-- https://hireparagon.com
-- https://paragonio.github.io
+- https://hellostorysmiths.com
+- https://legacyio.github.io
 
 ## Local Development
 1. Update local node to 18+
