@@ -76,7 +76,7 @@ export default function Reserve() {
   return (
     <Container pt={60}>
       <Title size="h2" align="center" className={classes.title}>
-        Reserve your position
+        Reserve your consultation
       </Title>
       <Text mt="xl" align="center">
         We appreciate your patience while we process high demand. You’ll receive your invitation as
