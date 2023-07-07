@@ -37,12 +37,13 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         <meta name="version" content={project.version} />
         {/* eslint-disable-next-line react/no-unknown-property */}
         <link rel="shortcut icon" href="/favicon.svg" />
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-P6D2E9JGJP"/>
-        <Script
-          id='google-analytics'
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+      </Head>
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-P6D2E9JGJP"/>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){
             dataLayer.push(arguments);
@@ -50,10 +51,8 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           gtag('js', new Date());
           gtag('config', 'G-P6D2E9JGJP');
         `,
-          }}
-        />
-      </Head>
-
+        }}
+      />
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider
           theme={{
