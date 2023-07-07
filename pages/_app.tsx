@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import NextApp, { AppProps, AppContext } from 'next/app';
+import Script from 'next/script';
 import { getCookie, setCookie } from 'cookies-next';
 import Head from 'next/head';
 import { MantineProvider, ColorScheme, ColorSchemeProvider } from '@mantine/core';
@@ -36,6 +37,21 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         <meta name="version" content={project.version} />
         {/* eslint-disable-next-line react/no-unknown-property */}
         <link rel="shortcut icon" href="/favicon.svg" />
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-P6D2E9JGJP"/>
+        <Script
+          id='google-analytics'
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-P6D2E9JGJP');
+        `,
+          }}
+        />
       </Head>
 
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
